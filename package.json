@@ -35,7 +35,7 @@
   "scripts": {
     "build": "rimraf lib && babel --extensions \".ts\" src -d lib",
     "build:watch": "babel --extensions \".ts\" src -d lib --watch",
-    "compile": "node ./bin/svg-icon-generate.js --svgDir ./svgs --destination ./Icon.tsx",
+    "compile": "node ./bin/svg-to-tsx.js --svgDir ./svgs --destination ./Icon.tsx",
     "push": " yarn build && git add . && git commit -m \"++\" && git push"
   },
   "version": "1.0.0"
