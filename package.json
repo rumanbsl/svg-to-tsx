@@ -1,7 +1,7 @@
 {
   "author": "https://github.com/rumanbsl",
   "bin": {
-    "svg-icon-generate": "bin/svg-to-tsx.js"
+    "svg-to-tsx": "bin/svg-to-tsx.js"
   },
   "dependencies": {
     "nunjucks": "^3.2.2",
