@@ -30,7 +30,7 @@ export function cleanupSvg(svg, keepFillColor, extractedWidth = "", extractedHei
   const hasViewBox = svgLink.indexOf("viewBox") !== -1;
   const replacedString = `{...rest} height={${height}} width={${width}} onClick={onClick} style={style} className={className}`;
   const cleanedSvg = hasViewBox ? svgLink
-    .replace(/viewBox/, `${replacedString} viewBox`) : svgLink.replace("<svg", `<svg ${replacedString} viewBox="0 0 0 ${extractedHeight} ${extractedWidth}"`);
+    .replace(/viewBox/, `${replacedString} viewBox`) : svgLink.replace("<svg", `<svg ${replacedString} viewBox="0 0 ${extractedHeight} ${extractedWidth}"`);
 
   return keepFillColor
     ? cleanedSvg
